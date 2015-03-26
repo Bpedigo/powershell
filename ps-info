@@ -37,4 +37,4 @@ Write-host "Current PSversion & .Net version and scripting policy"
 $x
 Write-host "`nThe current scripting policy is set to: $y"
 Write-Host "The current version of PowerShell is $PSver"
-Write-host "===========
+Write-host "===================================================="
