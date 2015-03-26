@@ -1,0 +1,40 @@
+<# 
+.SYNOPSIS
+    Useful PowerShell info displays the current powershell version & .Net version along with the script execution policy
+    
+.DESCRIPTION
+
+.PARAMETER  -filename  -all -edit
+
+.EXAMPLE
+    create-module filename Luna -all -edit
+
+.INPUTS
+
+.OUTPUTS
+
+.NOTES
+
+   Author: Brian Pedigo
+
+   Created: March 2015
+
+.LINK
+
+    https://github.com/Bpedigo
+    
+#>
+
+
+
+
+$y = get-executionpolicy
+$x = $PSversiontable
+$PSver = $(get-itemProperty hklm:\SOFTWARE\Microsoft\PowerShell\1\PowerShellEngine).PowerShellVersion
+clear-host
+Write-host "====================================================="
+Write-host "Current PSversion & .Net version and scripting policy"
+$x
+Write-host "`nThe current scripting policy is set to: $y"
+Write-Host "The current version of PowerShell is $PSver"
+Write-host "===========
